@@ -3,8 +3,8 @@
 export interface Schema {}
 
 export type Type = NameOrType | NameOrType[];
-export type NameOrType = TypeNames | RecordType | ArrayType | NamedType;
-export type TypeNames = "record" | "array" | "null" | "map" | string;
+export type NameOrType = TypeNames | RecordType | ArrayType | NamedType | EnumType;
+export type TypeNames = "record" | "array" | "null" | "map" | "enum" | string;
 
 export interface Field {
 	name: string;

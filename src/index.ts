@@ -32,7 +32,7 @@ function convertPrimitive(avroType: string): string {
 /** Converts an Avro record type to a TypeScript file */
 export function avroToTypeScript(recordType: RecordType): string {
 	const output: string[] = [];
-	convertRecord(recordType, output);
+	convertType(recordType, output);
 	return output.join("\n");
 }
 
